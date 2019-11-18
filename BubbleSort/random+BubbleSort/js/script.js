@@ -19,3 +19,6 @@ const b = RandomInt(1, 1000);
 const c = RandomInt(1, 1000);
 
 const arr = [a, b, c]
+
+BubbleSort(arr);
+console.log(arr);
