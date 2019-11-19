@@ -1,6 +1,7 @@
 const BubbleSort = arr => {
-    for (i = 0; i < arr.length - 1; i++) {
-        for (j = 0; j < arr.length - (i + 1); j++) {
+    const len = arr.length;
+    for (i = 0; i < len - 1; i++) {
+        for (j = 0; j < len - (i + 1); j++) {
             if (arr[j] > arr[j + 1]) {
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
             }
@@ -17,7 +18,6 @@ function RandomInt(min, max) {
 const a = RandomInt(1, 1000);
 const b = RandomInt(1, 1000);
 const c = RandomInt(1, 1000);
-
 const arr = [a, b, c]
 
 BubbleSort(arr);
